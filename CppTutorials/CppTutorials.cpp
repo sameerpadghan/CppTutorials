@@ -15,8 +15,7 @@
 #include "Fibonacci.h"
 int main()
 {
-	//Pointers::function();
-	//int result = Fibonacci::recursive(50);
-	int result = Fibonacci::iterative(20);
-	std::cout << result;
+	//Pointers::allocate_array();
+	//Pointers::smart_pointer();
+	Pointers::shared_pointer();
 }

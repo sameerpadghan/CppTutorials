@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CppTutorials.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="Pointers.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="Pointers.h" />
   </ItemGroup>
