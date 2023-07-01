@@ -14,11 +14,15 @@
 #include "Pointers.h"
 #include "Fibonacci.h"
 #include "CreateObject.h"
+#include "SmartPointers.h"
+#include "Templates.h"
 int main()
 {
 	//Pointers::allocate_array();
 	//Pointers::smart_pointer();
 	//Pointers::shared_pointer();
-	create_object::CreateObject create_object = create_object::CreateObject();
-	create_object.function();
+	//create_object::CreateObject create_object = create_object::CreateObject();
+	//create_object.function();
+	my_template::function_template();
+	my_template::class_template();
 }

@@ -31,10 +31,15 @@ void create_object::CreateObject::function()
 	Entity entity4(10);
 	entity4.print();
 	//using unique pointer
-	std::unique_ptr<Entity> entity5 = std::unique_ptr<Entity>();
+	std::unique_ptr<Entity> entity5 = std::unique_ptr<Entity>(new Entity());
 	entity5->print();
-	std::unique_ptr<Entity> entity6;
-	entity6->print();
+	//1)Entity array of 100 Entity
+	//2)Using unqiue pointers
+	std::unique_ptr<Entity[]> entity_array = std::unique_ptr<Entity[]>(new Entity[100]);
+	for (int i = 0; i < 100; i++)
+	{
+		entity_array[i].print();
+	}
 	int count = Entity::get_object_count();
 	delete entity3;
 }

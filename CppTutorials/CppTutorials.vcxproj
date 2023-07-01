@@ -132,6 +132,8 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Fibonacci.cpp" />
     <ClCompile Include="Pointers.cpp" />
+    <ClCompile Include="SmartPointers.cpp" />
+    <ClCompile Include="Templates.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateObject.h" />
@@ -139,6 +141,8 @@
     <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="Pointers.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SmartPointers.h" />
+    <ClInclude Include="Templates.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CppTutorials.rc" />
