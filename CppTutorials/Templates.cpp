@@ -10,15 +10,20 @@ void my_template::function_template()
 void my_template::class_template()
 {
 	//different way to create object of a template class
+	// option 1
 	my_template::Array<int, 100> array1;
 	std::cout << array1.get_size() << std::endl;
+	// option 2
 	my_template::Array<std::string, 100> array2;
 	std::cout << array2.get_size() << std::endl;
+	// option 3
 	auto array3 = my_template::Array<int, 100>();
 	std::cout << array3.get_size() << std::endl;
+	// option 4
 	auto array4 = new my_template::Array<int, 100>();
 	std::cout << array4->get_size() << std::endl;
 	delete array4;
+	// option 5
 	auto array5 = std::unique_ptr<Array<int, 100>>();
 	array5->get_size();
 }
